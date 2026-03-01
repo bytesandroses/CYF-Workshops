@@ -5,13 +5,11 @@
 // Fix anything that doesn't work
 
 function countWords(text) {
-    return text.split('').length;
+  return text.split(" ").length;
 }
 
-
-test('should count the words in a string of text', () => {
-
-    const text = "Here is a plain sentence with some information! Try to find the word count";
-    expect(countWords(text)).toBe(14);
-
+test("should count the words in a string of text", () => {
+  const text =
+    "Here is a plain sentence with some information! Try to find the word count";
+  expect(countWords(text)).toBe(14);
 });
