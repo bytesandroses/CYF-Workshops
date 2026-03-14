@@ -20,6 +20,7 @@ export function App() {
         <button id="increment">Increment</button>
     `;
   body.appendChild(main);
+  // This is a test 
 
   const button = body.querySelector("#increment");
   const counter = body.querySelector("#counter");
