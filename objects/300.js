@@ -4,21 +4,27 @@
 // Fix anything that needs fixing.
 
 function checkLivesNearCYF(person) {
-    const cyfLocations = ["Birmingham", "Cape Town", "Glasgow", "London", "Manchester"];
-    return cyfLocations.includes(person.location);
+  const cyfLocations = [
+    "Birmingham",
+    "Cape Town",
+    "Glasgow",
+    "London",
+    "Manchester",
+  ];
+  return cyfLocations.includes(person.location);
 }
 
 const mo = {
-    "name": "Mo",
-    "city": "Glasgow",
-    "focus": "React",
+  name: "Mo",
+  location: "Glasgow",
+  focus: "React",
 };
 
 const sayed = {
-    "name": "Sayed",
-    "city": "Edinburgh",
-    "focus": "SQL",
-}
+  name: "Sayed",
+  location: "Edinburgh",
+  focus: "SQL",
+};
 
 console.assert(checkLivesNearCYF(mo));
 console.assert(!checkLivesNearCYF(sayed));
